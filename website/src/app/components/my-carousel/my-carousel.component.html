@@ -1,0 +1,25 @@
+<mdb-carousel
+  class="carousel slide carousel-fade"
+  (activeSlideChange)="cIndex = $event.relatedTarget"
+  [animation]="'fade'"
+>
+  <div *ngFor="let slide of slides; let index = index">
+    <mdb-carousel-item>
+      <a href="{{ slide.url }}" target="_blank" class="view">
+        <img
+          class="d-block"
+          src="{{ slide.url }}"
+          alt="{{ index }}"
+          *ngIf="
+            index == cIndex ||
+            index == cIndex - 1 ||
+            index == cIndex + 1 ||
+            index == cIndex + 2 ||
+            index == 0
+          "
+        />
+        <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+      </a>
+    </mdb-carousel-item>
+  </div>
+</mdb-carousel>

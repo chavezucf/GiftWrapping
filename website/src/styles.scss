@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #eee;
+}
+
+
+$palette: (
+  main: #EA1C30,
+  white: #fff,
+  off-White: #e4eaeb
+);
+
+h2 {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  color: map-get($palette,main);
+  font-weight: 600;
+
+  span {
+    color: map-get($palette,white);
+  margin: 0 15px;
+  }
+
+  &:before{
+    background: map-get($palette,main);
+    height: 2px;
+    flex: 0.15;
+    content: '';
+  }
+  &.left:after{
+    background: none;
+  }
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+li {
+  font-size: 20px;
+}
+
+.box {
+  background: map-get($palette,main);
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 5px;
+  p {
+    color: map-get($palette,white);
+    font-size: 23px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.main-text {
+  color: map-get($palette,main);
+}
+
+
+@media (max-width:650px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .box {
+    margin-top: 25px;
+    padding: 15px;
+    p {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+  }
+  li {
+    font-size: 18px;
+  }
+}

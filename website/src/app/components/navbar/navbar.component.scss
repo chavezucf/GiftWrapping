@@ -1,0 +1,60 @@
+@import './../../../styles.scss';
+.navbar-brand-brand {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-item-item {
+  margin: 0px;
+}
+.navbar {
+  min-height: 60px;
+}
+
+.navbar-brand {
+  padding: 0px 0px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 0.7em;
+}
+
+#headerNavbar{
+  background: map-get($palette,off-White);
+}
+
+.nav-link {
+  display: block;
+  padding: 0;
+}
+
+.email-text {
+  color: black;
+  text-decoration: underline;
+}
+.phone-text {
+  color: black;
+  text-decoration: none;
+}
+.white-phone-text {
+  color: map-get($palette,white);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+
+@media (max-width:1150px) {
+  .navbar-brand {
+    margin-right: 0.3em;
+  }
+  h1{
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width:650px) {
+  #main-logo img {
+    max-height: 90px;
+  }
+}

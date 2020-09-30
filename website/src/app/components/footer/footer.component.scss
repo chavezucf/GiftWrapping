@@ -1,0 +1,24 @@
+.page-footer {
+  padding-top: 30px;
+  bottom: 0;
+  z-index: 1030;
+}
+
+li {
+  list-style: none;
+  margin-left: 5em;
+}
+
+ul {
+  padding: 0;
+}
+
+@media (max-width:770px) {
+  .pr-2{
+    display: none;
+  }
+  li {
+    margin-left: 0em;
+    text-align: center
+  }
+}

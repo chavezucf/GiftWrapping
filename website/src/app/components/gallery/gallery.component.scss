@@ -1,0 +1,6 @@
+@import './../../../styles.scss';
+h3 {
+  font-weight: 400;
+  font-size: 32px;
+  color: map-get($palette,main);
+}

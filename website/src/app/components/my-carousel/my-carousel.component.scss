@@ -1,0 +1,48 @@
+
+.view {
+
+  max-height: 600px;
+  border-radius: 5px;
+
+  img {
+
+  max-height: 600px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+
+  }
+}
+
+
+@media (max-width:950px) {
+  .view {
+
+    max-width: 100%;
+
+    img {
+
+      max-width: 100%;
+
+
+    }
+  }
+}
+
+
+
+@media (max-width:650px) {
+  .view {
+
+    max-height: 200px;
+
+    img {
+
+      max-height: 200px;
+
+
+    }
+  }
+}
+

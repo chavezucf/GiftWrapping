@@ -1,0 +1,16 @@
+@import './../../../styles.scss';
+
+.redd-text {
+  color: map-get($palette,main);
+}
+
+.email-text {
+  color: black;
+  text-decoration: underline;
+}
+.phone-text {
+  color: black;
+  text-decoration: none;
+}
+
+

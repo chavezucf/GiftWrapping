@@ -13,4 +13,19 @@
   text-decoration: none;
 }
 
+.ecm-card {
+
+  .card-title {
+    color: map-get($palette,main);
+  }
+
+  .ecm-card-btn {
+    background-color: map-get($palette,main);
+    border-radius: 1em;
+    border: 0 none map-get($palette,secondary);
+  }
+
+  border: 0.5em solid map-get($palette,secondary);
+  border-radius: 2em;
+}
 

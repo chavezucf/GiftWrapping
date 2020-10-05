@@ -9,10 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServicesOfferedComponent } from './components/services-offered/services-offered.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { CareTipsComponent } from './components/care-tips/care-tips.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { MyCarouselComponent } from './components/my-carousel/my-carousel.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +18,7 @@ import { MyCarouselComponent } from './components/my-carousel/my-carousel.compon
     NavbarComponent,
     FooterComponent,
     ServicesOfferedComponent,
-    GalleryComponent,
-    CareTipsComponent,
     ContactUsComponent,
-    MyCarouselComponent
   ],
   imports: [
     BrowserModule,

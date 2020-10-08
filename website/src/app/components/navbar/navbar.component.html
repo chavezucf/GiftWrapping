@@ -31,86 +31,32 @@
     </div>
   </div>
 </div>
-<!--Navbar-->
-<mdb-navbar
-  SideClass="navbar navbar-expand-lg navbar-dark teal"
-  style="background-color: rgba(0, 0, 0, 0.2);"
-  id="stickNavbar"
->
-  <!-- Navbar brand -->
-  <logo>
-    <a class="navbar-brand my-auto" [routerLink]="['/']">
-      <img
-        *ngIf="this.showMore"
-        class="navbar-brand"
-        src="../../../assets/images/ECM_white.png"
-        alt="logo"
-      />
-    </a>
-  </logo>
-  <!-- Collapsible content -->
-  <links>
-    <!-- Links -->
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item navbar-brand ">
-        <a class="nav-link waves-light" [routerLink]="['/']" mdbWavesEffect
-          >Home</a
-        >
-      </li>
-      <!--<li class="nav-item navbar-brand">
-        <a
-          class="nav-link waves-light"
-          [routerLink]="['/Services']"
-          mdbWavesEffect
-          >Services</a
-        >
-      </li>
-      <li class="nav-item navbar-brand">
-        <a
-          class="nav-link waves-light"
-          [routerLink]="['/Gallery']"
-          mdbWavesEffect
-          >Gallery</a
-        >
-      </li>
-      <li class="nav-item navbar-brand">
-        <a
-          class="nav-link waves-light"
-          [routerLink]="['/CareTips']"
-          mdbWavesEffect
-          >Care Tips</a
-        >
-      </li>
-      <li class="nav-item navbar-brand">
-        <a
-          class="nav-link waves-light"
-          [routerLink]="['/ContactUS']"
-          mdbWavesEffect
-          >Contact Us</a
-        >
-      </li>
-      <li class="nav-item navbar-brand">
-        <a
-          href="https://www.facebook.com/CmpCrystalMarblePolishing"
-          target="_blank"
-          class="nav-link"
-        >
-          mdb-icon fab icon="facebook"></mdb-icon>
-          Facebook
-        </a>
-      </li>-->
+<nav id="stickNavbar" class="navbar navbar-expand-lg navbar-dark teal">
+  <a class="navbar-brand my-auto" [routerLink]="['/']">
+    <img
+      *ngIf="this.showMore"
+      class="navbar-brand"
+      src="../../../assets/images/ECM_white.png"
+      alt="logo"
+    />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item active ">
+          <a class="nav-link " [routerLink]="['/']" mdbWavesEffect>Home</a>
+        </li>
+        <!--<li class="nav-item navbar-brand">
+          <a
+            class="nav-link waves-light"
+            [routerLink]="['/Services']"
+            mdbWavesEffect
+            >Services</a
+          >
+        </li>-->
     </ul>
-    <!-- Links -->
-
-    <ul *ngIf="this.showMore" class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item navbar-brand">
-        <a class="white-phone-text" href="tel:850-585-3132">
-          <mdb-icon fas icon="phone" aria-hidden="true"></mdb-icon>
-          850-585-3132</a
-        >
-      </li>
-    </ul>
-  </links>
-  <!-- Collapsible content -->
-</mdb-navbar>
-<!--/.Navbar-->
+  </div>
+</nav>

@@ -11,6 +11,22 @@ $palette: (
   off-White: #FFF8F0
 );
 
+.font-main {
+  color: map-get($palette,main);;
+} 
+
+h1, h2 {
+  font-family: 'Proza Libre', sans-serif;
+  line-height: 0.9;
+}
+h3, h4, h5, h6, p {
+  font-family: 'Hind', sans-serif;
+}
+
+h1 {
+  font-size: 58px;
+}
+
 h2 {
   display: flex;
   align-items: center;
@@ -59,6 +75,15 @@ li {
 
 .main-text {
   color: map-get($palette,main);
+}
+
+
+.ecm-btn {
+  background-color: map-get($palette,main);
+  border-radius: 1em;
+  border: 0 none map-get($palette,secondary);
+  padding: 0.5em 2em;
+  margin: 1em;
 }
 
 

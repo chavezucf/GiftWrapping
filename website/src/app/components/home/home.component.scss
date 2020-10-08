@@ -1,5 +1,30 @@
 @import './../../../styles.scss';
 
+.background-container {
+  position: relative;
+  .background-img {
+    width: 100%;
+  }
+  .header-centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+    .background-header { 
+      color: map-get($palette,white);
+    }
+  }
+  .header-gift {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60%;
+    margin-top: 1em;
+  }
+  margin-bottom: 9em;
+}
 .redd-text {
   color: map-get($palette,main);
 }

@@ -1,0 +1,12 @@
+@import './../../../styles.scss';
+.red-line {
+  border: 2px solid map-get($palette,main-light);
+}
+
+.quote {
+    font-size: 32px;
+    color: map-get($palette,secondary);
+    text-align: center;
+    line-height: 1.3;
+    padding: 0.2em 0;
+}

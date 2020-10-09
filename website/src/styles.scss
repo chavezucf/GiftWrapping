@@ -6,13 +6,17 @@ body {
 
 $palette: (
   main: #d32f2f,
+  main-light: #F86C6B,
   secondary: #009688,
   white: #fff,
   off-White: #FFF8F0
 );
 
 .font-main {
-  color: map-get($palette,main);;
+  color: map-get($palette,main);
+} 
+.font-secondary {
+  color: map-get($palette,secondary);
 } 
 
 h1, h2 {
@@ -25,29 +29,6 @@ h3, h4, h5, h6, p {
 
 h1 {
   font-size: 58px;
-}
-
-h2 {
-  display: flex;
-  align-items: center;
-  font-size: 32px;
-  color: map-get($palette,main);
-  font-weight: 600;
-
-  span {
-    color: map-get($palette,white);
-  margin: 0 15px;
-  }
-
-  &:before{
-    background: map-get($palette,main);
-    height: 2px;
-    flex: 0.15;
-    content: '';
-  }
-  &.left:after{
-    background: none;
-  }
 }
 
 p {

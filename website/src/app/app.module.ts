@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutOutMagicComponent } from './components/about-out-magic/about-out-magic.component';
+import { QuoteSeparatorComponent } from './components/quote-separator/quote-separator.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AboutOutMagicComponent } from './components/about-out-magic/about-out-m
     NavbarComponent,
     FooterComponent,
     AboutOutMagicComponent,
+    QuoteSeparatorComponent,
   ],
   imports: [
     BrowserModule,

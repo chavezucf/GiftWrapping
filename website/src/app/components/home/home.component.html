@@ -1,85 +1,150 @@
 <div class="background-container">
-  <img class="background-img" src="../../../assets/images/Background/Group 57@3x.png" alt="Muiltple Gifts">
-  <div class="header-centered"> 
+  <img
+    class="background-img"
+    src="../../../assets/images/Background/Group 57@3x.png"
+    alt="Muiltple Gifts"
+  />
+  <div class="header-centered">
     <div class="text-center">
       <h1 class="background-header">Gift Wrapping</h1>
-      <a href="tel:330-860-3993" class="btn btn-primary ecm-btn"> Make Request </a>
+      <a href="tel:330-860-3993" class="btn btn-primary ecm-btn">
+        Make Request
+      </a>
     </div>
   </div>
-  <img class="header-gift" src="../../../assets/images/HeaderGift/HeaderGift2.png" alt="Header Gift">
+  <img
+    class="header-gift"
+    src="../../../assets/images/HeaderGift/HeaderGift2.png"
+    alt="Header Gift"
+  />
 </div>
-  <div class="container">
+<div class="container">
+
   <div class="row">
     <div class="col-sm-12">
-      <h1 class="text-center font-main mb-4">Christmas Magic For Everyone</h1>
-      <p class="mb-0"> 
-        Here at Emily’s Christmas Magic we have one goal in mind. <span class="font-weight-bold font-main"> A beautiful easy Christmas for you and your loved ones! </span> We are a local Christmas fantic family that loves to create Hallmark movie ready Christmas presents.
+      <p class="mb-0">
+        Here at Emily’s Christmas Magic we have one goal in mind.
+        <span class="font-weight-bold font-main">
+          A beautiful easy Christmas for you and your loved ones!
+        </span>
+        We are a local Christmas fantic family that loves to create Hallmark
+        movie ready Christmas presents.
       </p>
-    <div class="text-center">
-      <a [routerLink]="['/AboutOurMagic']" class="btn btn-primary ecm-btn"> Our Story </a>
+      <div class="text-center">
+        <a [routerLink]="['/AboutOurMagic']" class="btn btn-primary ecm-btn">
+          Our Story
+        </a>
+      </div>
     </div>
-      <h2>Contact</h2>
-      <ul>
-        <li><span class="font-weight-bold">Phone: </span> <a class="phone-text" href="tel:850-585-3132">330-860-3993</a></li>
-        <li>
-          <span class="font-weight-bold">E-mail: </span>
-          <a class="email-text" href="mailto:EmilysChristmasMagic@gmail.com">EmilysChristmasMagic@gmail.com</a>
-        </li>
-        <li>
-          <span class="font-weight-bold">Location: </span> Orlando Area
-        </li>
-      </ul>
-    </div>
+  </div>
 
-    <!-- Cards -->
-    <div class="cards mt-4">
-      <div class="row">
-        <div class="col-lg-4">
-      <div class="card ecm-card p-3 mb-4">
-        <img class="card-img-top" src="../../../assets/images/MuiltGifts/M_Gifts2.png" alt="Muiltple Gifts">
-        <div class="card-body pb-0">
-          <h4 class="card-title text-center"><b>Muiltple Gifts</b></h4>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p> -->
-            <div class="text-center">
-              <a href="tel:330-860-3993" class="btn btn-primary ecm-card-btn"> Learn More </a>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="card ecm-card p-3 mb-4">
-        <img class="card-img-top" src="../../../assets/images/UniqueShapes/UniqueShapes@2x.png" alt="Unique Shapes">
-        <div class="card-body pb-0">
-          <h4 class="card-title text-center"><b>Unique Shapes</b></h4>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p> -->
-            <div class="text-center">
-              <a href="tel:330-860-3993" class="btn btn-primary ecm-card-btn"> Learn More </a>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="card ecm-card p-3 mb-4">
-        <img class="card-img-top ecm-card-img" src="../../../assets/images/Expedited/Expedited@2x.png" alt="Expedited">
-        <div class="card-body pb-0">
-          <h4 class="card-title text-center"><b>Expedited</b></h4>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p> -->
-            <div class="text-center">
-              <a href="tel:330-860-3993" class="btn btn-primary ecm-card-btn"> Learn More </a>
-            </div>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="row">
     <div class="col-sm-12">
-      <p class="text-center mt-2">
-        Custom magic available upon request
-        <span class="font-weight-bold redd-text"> | </span>
-        All customers welcome.
+      <app-quote-separator
+        [quote]="'A beautiful easy Christmas for you and your loved ones! '"
+      ></app-quote-separator>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="">
+        We know how the hustle and bustle of the most wonderful time of year can
+        make your to-do list run longer then Santa’s naughty and nice list so
+        let us help!
       </p>
+      <p class="mb-0">
+        From our simple classic wrapping offerings all the way to your Pinterst
+        dream custom wrapping job we do it all.
+        <span class="font-weight-bold font-main">
+          We will make your gifts feel as magical as if they came straight from
+          the big man in red himself! </span
+        >We offer competitive pricing to ensure you have plenty leftover for the
+        extra tinsel and garland to deck the halls!
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- Cards -->
+      <div class="cards mt-4">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card ecm-card p-3 mb-4">
+              <img
+                class="card-img-top"
+                src="../../../assets/images/MuiltGifts/M_Gifts2.png"
+                alt="Muiltple Gifts"
+              />
+              <div class="card-body pb-0">
+                <h4 class="card-title text-center"><b>Muiltple Gifts</b></h4>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p> -->
+                <div class="text-center">
+                  <a
+                    href="tel:330-860-3993"
+                    class="btn btn-primary ecm-card-btn"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card ecm-card p-3 mb-4">
+              <img
+                class="card-img-top"
+                src="../../../assets/images/UniqueShapes/UniqueShapes@2x.png"
+                alt="Unique Shapes"
+              />
+              <div class="card-body pb-0">
+                <h4 class="card-title text-center"><b>Unique Shapes</b></h4>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p> -->
+                <div class="text-center">
+                  <a
+                    href="tel:330-860-3993"
+                    class="btn btn-primary ecm-card-btn"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card ecm-card p-3 mb-4">
+              <img
+                class="card-img-top ecm-card-img"
+                src="../../../assets/images/Expedited/Expedited@2x.png"
+                alt="Expedited"
+              />
+              <div class="card-body pb-0">
+                <h4 class="card-title text-center"><b>Expedited</b></h4>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p> -->
+                <div class="text-center">
+                  <a
+                    href="tel:330-860-3993"
+                    class="btn btn-primary ecm-card-btn"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p class="text-center mt-2">
+            Custom magic available upon request
+            <span class="font-weight-bold redd-text"> | </span>
+            All customers welcome.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

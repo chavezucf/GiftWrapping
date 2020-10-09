@@ -8,8 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ServicesOfferedComponent } from './components/services-offered/services-offered.component';
-import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { AboutOutMagicComponent } from './components/about-out-magic/about-out-magic.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ServicesOfferedComponent,
-    ContactUsComponent,
+    AboutOutMagicComponent,
   ],
   imports: [
     BrowserModule,

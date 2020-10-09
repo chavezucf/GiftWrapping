@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
 
       console.log("distanceToTop");
       console.log(distanceToTop);
-      if (distanceToTop <= 40) {
+      if (distanceToTop <= 0) {
         stickNavbar.classList.add('fixed-top');
         this.showMore = true;
       }

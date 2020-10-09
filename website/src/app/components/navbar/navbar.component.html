@@ -31,32 +31,30 @@
     </div>
   </div>
 </div>
-<nav id="stickNavbar" class="navbar navbar-expand-lg navbar-dark teal">
-  <a class="navbar-brand my-auto" [routerLink]="['/']">
-    <img
-      *ngIf="this.showMore"
-      class="navbar-brand"
-      src="../../../assets/images/ECM_white.png"
-      alt="logo"
-    />
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-        <li class="nav-item active ">
-          <a class="nav-link " [routerLink]="['/']" mdbWavesEffect>Home</a>
+<mdb-navbar id="stickNavbar"  SideClass="navbar navbar-expand-lg navbar-dark teal" [containerInside]="false">
+  <mdb-navbar-brand>
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img
+        *ngIf="this.showMore"
+        class="navbar-brand"
+        src="../../../assets/images/ECM_white.png"
+        alt="logo"/>
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link waves-light" [routerLink]="['/']" mdbWavesEffect>Home</a>
         </li>
-        <!--<li class="nav-item navbar-brand">
-          <a
-            class="nav-link waves-light"
-            [routerLink]="['/Services']"
-            mdbWavesEffect
-            >Services</a
-          >
-        </li>-->
+        
+        <li class="nav-item">
+          <a class="nav-link waves-light" [routerLink]="['/AboutOurMagic']" mdbWavesEffect>About Our Magic</a>
+        </li>
     </ul>
-  </div>
-</nav>
+
+   
+  </links>
+
+</mdb-navbar>

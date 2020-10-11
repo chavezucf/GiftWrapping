@@ -10,9 +10,10 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
-    width: 80%;
+    width: 100%;
     .background-header { 
       color: map-get($palette,white);
+      font-size: 64px;
     }
   }
   .header-gift {
@@ -23,5 +24,5 @@
     width: 60%;
     margin-top: 1em;
   }
-  margin-bottom: 9em;
+  margin-bottom: 18em;
 }

@@ -10,25 +10,22 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
-    width: 80%;
+    width: 100%;
     .background-header { 
       color: map-get($palette,white);
+      font-size: 64px;
     }
   }
   .header-gift {
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -5%);
     width: 60%;
     margin-top: 1em;
   }
-  margin-bottom: 9em;
+  margin-bottom: 10em;
 }
-.redd-text {
-  color: map-get($palette,main);
-}
-
 .email-text {
   color: black;
   text-decoration: underline;

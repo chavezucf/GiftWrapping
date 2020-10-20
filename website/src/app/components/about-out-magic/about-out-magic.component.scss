@@ -26,3 +26,39 @@
   }
   margin-bottom: 18em;
 }
+@media only screen and (min-width: 600px) {
+  .background-container {
+    margin-bottom: 3em;
+    .background-img {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url(../../../assets/images/Background/Header@3x.png) no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 500px;
+      padding-left: 100%;
+      background-size: cover;
+      margin-top: -30px;
+    }
+    .header-gift {
+      display: none;
+    }
+    .header-centered {
+      .header-background{
+        background-color: map-get($palette,secondary-dark);
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .background-container.christmas-team {
+
+    margin-top: 2em;
+    .font-main {
+      color: map-get($palette,white);
+    }
+  }
+}

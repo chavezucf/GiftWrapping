@@ -35,6 +35,15 @@
   text-decoration: none;
 }
 
+.ecm-card {
+  img {
+    object-fit: cover;
+    max-height:120px;
+    width: auto;
+    height: auto;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .background-container {
     margin-bottom: 3em;

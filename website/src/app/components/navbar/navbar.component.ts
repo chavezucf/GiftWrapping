@@ -17,8 +17,8 @@ export class NavbarComponent implements OnInit {
       let distanceToTop = stickNavbar.getBoundingClientRect().top;
       let distanceToBottom = headerNavbar.getBoundingClientRect().bottom;
 
-      console.log("distanceToTop");
-      console.log(distanceToTop);
+      //console.log("distanceToTop");
+      //console.log(distanceToTop);
       if (distanceToTop <= 0) {
         stickNavbar.classList.add('fixed-top');
         this.showMore = true;

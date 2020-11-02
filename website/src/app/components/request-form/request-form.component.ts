@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
-import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
-
-
 export class Form {
 
   constructor(
@@ -26,36 +21,33 @@ export class RequestFormComponent implements OnInit {
   email: string;
   message: string;
 
-  testUrl = "http://localhost:5001/emilyschristmasmagic/us-central1/sendMail";
-  //url = "https://us-central1-emilyschristmasmagic.cloudfunctions.net/sendMail"
-  //http://localhost:5001/emilyschristmasmagic/us-central1/sendMail";
+  url = "/sendMail";
 
-  model = new Form('Dr IQ', 'me@me.com', 'Chuck Over street');
+  model = new Form('', '', '');
 
   submitted = false;
 
   onSubmit() {
     const allInfo = `My name is ${this.model.name}. My email is ${this.model.email}. My message is ${this.model.message}`;
     console.log(allInfo);
-    this.http.put(this.testUrl, {
+    this.http.put(this.url, {
       "name" : this.model.name,
       "email" : this.model.email,
       "message" : this.model.message
     })
     .subscribe(
         val => {
-            console.log("PUT call successful value returned in body", 
+            console.log("GET call successful value returned in body", 
                         val);
         },
         response => {
-            console.log("PUT call in error", response);
+            console.log("GET call in error", response);
         },
         () => {
-            console.log("The PUT observable is now completed.");
+            console.log("The GET observable is now completed.");
         }
     );
     this.submitted = true;
-    console.log(this.submitted);
   }
 
   get diagnostic() { return JSON.stringify(this.model); }

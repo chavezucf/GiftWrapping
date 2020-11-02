@@ -5,7 +5,8 @@ import { AboutOutMagicComponent } from './components/about-out-magic/about-out-m
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'AboutOurMagic', component: AboutOutMagicComponent}
+  { path: 'AboutOurMagic', component: AboutOutMagicComponent},
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

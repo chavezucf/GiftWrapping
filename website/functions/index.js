@@ -36,9 +36,13 @@ exports.sendMail = functions.https.onRequest((req, res) => {
         // returning result
         return transporter.sendMail(mailOptions, (erro, info) => {
             if(erro){
-                return res.send(erro.toString());
+                functions.logger.info({'Error' : erro.toString()}, {structuredData: true});
+                //return res.send({'Error' : erro.toString()});
+                return res.status(500).json(JSON.stringify({
+                  error: erro.toString()
+                }));
             }
-            return res.send('Sended');
+            return res.send({'Answer' : 'Sended'});
         });
     });    
 });

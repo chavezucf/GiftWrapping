@@ -1,10 +1,42 @@
 {
   "hosting": {
     "public": "dist/web-app",
+    "rewrites": [
+      {
+        "source": "/sendMail",
+        "function": "sendMail"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
+  },
+  "emulators": {
+    "functions": {
+      "port": "5001"
+    },
+    "hosting": {
+      "port": "5000"
+    },
+    "ui": {
+      "enabled": true
+    }
   }
 }

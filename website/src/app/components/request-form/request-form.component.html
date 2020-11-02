@@ -1,20 +1,30 @@
-<form (ngSubmit)="onSubmit()" #heroForm="ngForm" [hidden]="submitted">
+<div class="form">
+<div class="text-center">
+   <h2> Form Request </h2>
+</div>
+   <form (ngSubmit)="onSubmit()" #heroForm="ngForm" [hidden]="submitted">
 
-    <!-- name -->
-    <input type="text" class="form-control" id="name"
-       required
-       [(ngModel)]="model.name" name="name">
-  
-    <!-- email -->
-    <input type="text" class="form-control" id="email"
-       required
-       [(ngModel)]="model.email" name="email">
-  
-    <!-- message -->
-    <input type="text" class="form-control" id="message"
-       required
-       [(ngModel)]="model.message" name="message">
-  
-       <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
-  
-</form>
+      <!-- name -->
+      <input type="text" class="form-control mb-2" id="name"
+         required
+         placeholder="Full Name"
+         [(ngModel)]="model.name" name="name">
+   
+      <!-- email -->
+      <input type="text" class="form-control mb-2" id="email"
+         required
+         placeholder="Email"
+         [(ngModel)]="model.email" name="email">
+   
+      <!-- message -->
+      <input type="text" class="form-control mb-2" id="message"
+         required
+         placeholder="Message"
+         [(ngModel)]="model.message" name="message">
+         <div class="text-center">
+         <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+         </div>
+   
+   </form>
+   <h5 [hidden]="!submitted"> Message has been sent to the North Pole! Your helpful elf should be reaching out soon! Merry Christmas!</h5>
+</div>

@@ -8,19 +8,19 @@
       <input type="text" class="form-control mb-2" id="name"
          required
          placeholder="Full Name"
-         [(ngModel)]="model.name" name="name">
+         [(ngModel)]="form.name" name="name">
    
       <!-- email -->
       <input type="text" class="form-control mb-2" id="email"
          required
          placeholder="Email"
-         [(ngModel)]="model.email" name="email">
+         [(ngModel)]="form.email" name="email">
    
       <!-- message -->
       <input type="text" class="form-control mb-2" id="message"
          required
          placeholder="Message"
-         [(ngModel)]="model.message" name="message">
+         [(ngModel)]="form.message" name="message">
          <div class="text-center">
          <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
          </div>
